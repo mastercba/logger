@@ -1,4 +1,4 @@
-# logger.py  v0.1.0 r1.0
+# logger.py  v0.1.1 r1.1
 
 
 
@@ -12,7 +12,7 @@ from time import sleep
 
 class MainLogger:
     def __init__(self):
-        print('start LOGGER v0.1.0 r1.0')
+        print('start LOGGER v0.1.1 r1.1')
 #        led = Pin(13, Pin.OUT)
 #        # ESP32 Pin assignment 
 #        i2c = I2C(-1, scl=Pin(22), sda=Pin(21))

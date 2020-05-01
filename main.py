@@ -1,4 +1,4 @@
-# MAIN - LOGGER v0.1.0 r1.0
+# MAIN - LOGGER v0.1.1 r1.1
 # -----------------------------------------------------------------------------
 
 from main.ota_updater import OTAUpdater 
@@ -13,12 +13,13 @@ def start():
     from main import ota_updater
     from main.logger import MainLogger
 
-    loggerPRJ = MainLogger()
+#    loggerPRJ = MainLogger()
 #    process()
-#    ota_updater = OTAUpdater('https://github.com/mastercba/logger')
+    ota_updater = OTAUpdater('https://github.com/mastercba/logger')
 #    ota_updater.download_and_install_update_if_available('TORRIMORA', 'santino989')
-#    ota_updater.using_network('TORRIMORA', 'santino989')
-#    ota_updater.check_for_update_to_install_during_next_reboot()    
+    ota_updater.using_network('TORRIMORA', 'santino989')
+    ota_updater.check_for_update_to_install_during_next_reboot()    
+    loggerPRJ = MainLogger()
 
 def boot():
     download_and_install_update_if_available()

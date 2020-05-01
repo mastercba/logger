@@ -1,4 +1,4 @@
-# ota_updater.py  v0.1.0 r1.0
+# ota_updater.py  v0.1.1 r1.1
 
 
 import usocket

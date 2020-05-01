@@ -1,19 +1,38 @@
-# logger.py  v0.1.1 r1.1
+# logger.py  v0.1.2 r1.2
 
 
 
-import machine
+from machine import Pin, I2C
 from time import sleep
-
-#from machine import Pin, I2C
 #from . import ssd1306
-#from time import sleep
 
 
 class MainLogger:
     def __init__(self):
-        print('start LOGGER v0.1.1 r1.1')
-#        led = Pin(13, Pin.OUT)
+        print('start LOGGER v0.1.2 r1.2')
+        led = Pin(13, Pin.OUT)
+        process()
+
+
+#------------------------------------------------       
+def process():
+    while True:
+        blink_blue_led()
+    
+
+#------------------------------------------------        
+
+#BlinkBlueLed r1.2
+def blink_blue_led():
+    led.value(1)
+    sleep(0.1)
+    led.value(0)
+    sleep(5.0)        
+        
+        
+        
+        
+        
 #        # ESP32 Pin assignment 
 #        i2c = I2C(-1, scl=Pin(22), sda=Pin(21))
 #        oled_width = 128

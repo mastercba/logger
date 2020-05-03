@@ -6,11 +6,13 @@ from machine import Pin, I2C
 from time import sleep
 #from . import ssd1306
 
+#ESP32 BlueLed Pin
+led = Pin(13, Pin.OUT, value=0) #BlueLed Pin
+
 
 class MainLogger:
     def __init__(self):
         print('start LOGGER v0.1.2 r1.2')
-        led = Pin(13, Pin.OUT)
         process()
 
 

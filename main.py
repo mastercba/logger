@@ -2,7 +2,7 @@
 # -----------------------------------------------------------------------------
 
 from main.ota_updater import OTAUpdater 
-from main.logger import MainLogger
+from main import logger
 
 
 def download_and_install_update_if_available():
